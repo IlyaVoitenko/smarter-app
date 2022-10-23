@@ -1,0 +1,12 @@
+.containerMainPageContext {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+}
+
+.containerMainPage {
+  height: 850px;
+  background: url("../../../public/image/EARTH.png");
+  background-size: 100% 100%;
+  position: relative;
+}

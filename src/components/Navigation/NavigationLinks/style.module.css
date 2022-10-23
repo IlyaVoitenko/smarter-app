@@ -1,0 +1,37 @@
+.spanNavLinks {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.36);
+  transform: rotate(-90deg);
+  text-align: center;
+}
+.containerImgPoint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15%;
+}
+.containerNavigationLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 308.5px;
+  flex: wrap;
+}
+#btnHome {
+  padding-right: 25px;
+}
+#btnClient {
+  padding-right: 9px;
+}
+.imgPoint {
+  display: block;
+  height: 3.71px;
+  width: 3.71px;
+}

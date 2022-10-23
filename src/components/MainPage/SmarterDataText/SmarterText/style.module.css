@@ -1,0 +1,26 @@
+@import url("http://fonts.cdnfonts.com/css/monument-extended");
+
+.textSmarterText {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 84px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.containerText {
+  margin: 0;
+  padding: 0;
+}
+.containerSmarterText {
+  width: 581.09px;
+  height: 236.11px;
+}
+#textData {
+  padding-left: 2%;
+}
+#textPropery {
+  float: right;
+}

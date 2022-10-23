@@ -1,0 +1,19 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+
+.containerNumberPage {
+  display: flex;
+}
+.spanNumberPage {
+  font-family: "Plus Jakarta Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #ffffff;
+  transform: rotate(-90deg);
+}
+.textColorGreen {
+  color: grey;
+}
