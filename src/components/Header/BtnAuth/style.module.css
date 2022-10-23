@@ -1,0 +1,21 @@
+.containerBtnAuth {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 30.35px;
+  padding-top: 49px;
+}
+.btnSingIn {
+  display: flex;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: black;
+  color: #ffffff;
+}
+.spanSingIn {
+  margin-top: 3%;
+}

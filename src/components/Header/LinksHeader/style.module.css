@@ -1,0 +1,48 @@
+.containerLinksHeader {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17px;
+  margin-top: 55px;
+}
+.btnLinksHeader {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 92.4%;
+  color: #ffffff;
+  height: 25px;
+  background-color: black;
+}
+#btnHome {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#btnClients {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#btnNews {
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+#btnCases {
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+#btnPricing {
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+#Contact {
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+}
