@@ -1,0 +1,30 @@
+.containerCollectionApps {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 322px;
+  height: 42px;
+  left: 222px;
+  top: 479px;
+}
+.lineCollectionApps {
+  width: 32px;
+  height: 3px;
+  background: #0189ff;
+  border: none;
+}
+.textWorld {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.displayRow {
+  display: flex;
+  flex-direction: row;
+}

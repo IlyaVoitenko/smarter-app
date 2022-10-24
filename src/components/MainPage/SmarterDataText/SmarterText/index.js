@@ -16,5 +16,4 @@ const SmarterText = () => {
     </div>
   );
 };
-
 export default SmarterText;
