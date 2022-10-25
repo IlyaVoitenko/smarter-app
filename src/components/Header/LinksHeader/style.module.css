@@ -14,7 +14,8 @@
   line-height: 92.4%;
   color: #ffffff;
   height: 25px;
-  background-color: black;
+  background: none;
+  border: none;
 }
 #btnHome {
   flex: none;

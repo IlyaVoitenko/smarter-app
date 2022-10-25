@@ -1,0 +1,41 @@
+.title {
+  position: absolute;
+  width: 492px;
+  height: 84px;
+  left: 472px;
+  top: 132px;
+
+  /* H1 */
+
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 84px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.postTitle {
+  position: absolute;
+  width: 444px;
+  height: 36px;
+  left: 496px;
+  top: 235px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+
+  color: #eeeeee;
+}
+.colorBackBlue {
+  background: #0075ff;
+}

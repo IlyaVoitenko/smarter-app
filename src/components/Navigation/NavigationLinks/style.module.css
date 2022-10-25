@@ -8,6 +8,8 @@
   color: rgba(255, 255, 255, 0.36);
   transform: rotate(-90deg);
   text-align: center;
+
+  text-decoration: none;
 }
 .containerImgPoint {
   display: flex;
@@ -34,4 +36,8 @@
   display: block;
   height: 3.71px;
   width: 3.71px;
+}
+.linkRouter {
+  color: inherit;
+  text-decoration: inherit;
 }

@@ -6,7 +6,6 @@ import BtnWhiteDemo from "../../BtnWhiteDemo";
 
 const SmarterDataText = () => {
   const { btnPosition } = style;
-  console.log("SmarterDataText :", btnPosition);
   return (
     <div>
       <SmarterText />

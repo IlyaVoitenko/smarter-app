@@ -1,5 +1,17 @@
 import React from "react";
+import TitleOverview from "./TitleOverview";
+import style from "./style.module.css";
+import Header from "../Header";
+import OverviewContent from "./OverviewContent";
 
-export const index = () => {
-  return <div>index</div>;
+const Overview = () => {
+  const { containerOverview } = style;
+  return (
+    <div className={containerOverview}>
+      <Header />
+      <TitleOverview />
+      <OverviewContent />
+    </div>
+  );
 };
+export default Overview;

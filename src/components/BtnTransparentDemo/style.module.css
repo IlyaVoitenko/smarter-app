@@ -1,0 +1,65 @@
+.btn {
+  display: flex;
+  align-items: center;
+  width: 184px;
+  height: 55px;
+  background: none;
+  backdrop-filter: blur(50px);
+  border-radius: 12px;
+  transform: skew(10deg);
+  color: white;
+}
+.btn:hover {
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: white;
+  color: #000;
+  backdrop-filter: blur(50px);
+
+  border-radius: 12px;
+}
+.btn:active {
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  box-shadow: inset 0px -7px 67px rgba(31, 78, 124, 0.38),
+    inset 0px 4px 44px rgba(31, 78, 124, 0.32);
+  backdrop-filter: blur(50px);
+  /* Note: backdrop-filter has minimal browser support */
+  color: #000;
+  border-radius: 12px;
+}
+.btnIcon {
+  position: absolute;
+  right: 77.68%;
+  top: 1%;
+  bottom: 5.45%;
+  transform: skew(-10deg);
+}
+
+.textBtnWhiteDemo {
+  position: absolute;
+  left: 35.87%;
+  right: 11.41%;
+  top: 34.55%;
+  bottom: 36.36%;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-align: left;
+  width: 55%;
+  transform: skew(-10deg);
+}

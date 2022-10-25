@@ -1,0 +1,65 @@
+.containerCardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.itemText {
+  width: 162px;
+  height: 68px;
+  left: calc(50% - 162px / 2 - 297px);
+
+  /* Body */
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 131.4%;
+  /* or 17px */
+
+  color: #ffffff;
+}
+.itemTitle {
+  width: 63px;
+  height: 16px;
+  left: calc(50% - 63px / 2 - 291.5px);
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-left: 50%;
+}
+.containerTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.imgItemOverview {
+  width: 7.5px;
+  height: 7.5px;
+  left: calc(50% - 7.5px / 2 - 374.25px);
+  top: 532px;
+  border: none;
+}
+.iconCardItem {
+  width: 100%;
+  height: 100%;
+}
+.firstIconCardItem {
+  width: 138px;
+  height: 137px;
+}
+.containerIconCardItem {
+  width: 169px;
+  height: 169px;
+}
+.containerContextItemOverview {
+  width: 162px;
+  height: 115px;
+}

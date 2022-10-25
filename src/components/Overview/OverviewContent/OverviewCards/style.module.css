@@ -1,0 +1,9 @@
+.containerOverviewCards {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  left: 335px;
+  top: 336px;
+}
