@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./style.module.css";
 
-export const NumberPage = () => {
+export const NumberPage = ({ numberPage }) => {
   const { containerNumberPage, spanNumberPage, textColorGreen } = style;
   return (
     <div className={containerNumberPage}>
       <span className={spanNumberPage}>
-        01 <span className={textColorGreen}>/ 05</span>
+        {numberPage} <span className={textColorGreen}>/ 05</span>
       </span>
     </div>
   );
