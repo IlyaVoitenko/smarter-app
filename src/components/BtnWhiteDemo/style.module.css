@@ -8,6 +8,43 @@
   border-radius: 12px;
   transform: skew(10deg);
 }
+.btn:hover {
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: linear-gradient(
+    88.33deg,
+    #ffffff -27.66%,
+    #159cfb 2.01%,
+    #ffffff 51.46%
+  );
+  backdrop-filter: blur(50px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 12px;
+}
+.btn:active {
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #ffffff;
+  box-shadow: inset 0px -7px 67px rgba(31, 78, 124, 0.38),
+    inset 0px 4px 44px rgba(31, 78, 124, 0.32);
+  backdrop-filter: blur(50px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 12px;
+}
 .btnIcon {
   position: absolute;
   right: 77.68%;
@@ -15,6 +52,7 @@
   bottom: 5.45%;
   transform: skew(-10deg);
 }
+
 .textBtnWhiteDemo {
   position: absolute;
   left: 35.87%;
@@ -30,6 +68,6 @@
 
   color: #000000;
   text-align: left;
-  width: 100%;
+  width: 55%;
   transform: skew(-10deg);
 }

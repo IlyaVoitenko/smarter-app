@@ -1,11 +1,13 @@
 import React from "react";
 import style from "./style.module.css";
+
 const BtnWhiteDemo = ({ stylePosition } = "") => {
+  const { containerBtnWhiteDemo, btn, btnIcon, textBtnWhiteDemo } = style;
   return (
-    <div className={stylePosition}>
-      <button className={style.btn}>
-        <img src="/image/btnIcon.png" className={style.btnIcon} />
-        <span className={style.textBtnWhiteDemo}>BOOK A DEMO</span>
+    <div className={stylePosition} id={containerBtnWhiteDemo}>
+      <button className={btn}>
+        <img src="/image/btnIcon.png" className={btnIcon} />
+        <span className={textBtnWhiteDemo}>BOOK A DEMO</span>
       </button>
     </div>
   );
