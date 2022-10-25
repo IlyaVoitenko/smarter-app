@@ -2,7 +2,7 @@ import React from "react";
 import style from "./style.module.css";
 import SmarterText from "./SmarterText";
 import TextCollectionApps from "./TextCollectionApps";
-// import BtnWhiteDemo from "../../BtnWhiteDemo";
+import BtnWhiteDemo from "../../BtnWhiteDemo";
 
 const SmarterDataText = () => {
   const { btnPosition } = style;
@@ -11,7 +11,7 @@ const SmarterDataText = () => {
     <div>
       <SmarterText />
       <TextCollectionApps />
-      {/* <BtnWhiteDemo stylePosition={btnPosition} /> */}
+      <BtnWhiteDemo stylePosition={btnPosition} />
     </div>
   );
 };

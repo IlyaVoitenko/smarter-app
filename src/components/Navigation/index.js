@@ -3,8 +3,9 @@ import style from "./style.module.css";
 import NavigationLinks from "./NavigationLinks";
 import NumberPage from "./NumberPage";
 const Navigation = () => {
+  const { containerNavigationComponents } = style;
   return (
-    <div className={style.containerNavigationComponents}>
+    <div className={containerNavigationComponents}>
       <NavigationLinks />
       <NumberPage />
     </div>
