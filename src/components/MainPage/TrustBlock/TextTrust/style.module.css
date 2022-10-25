@@ -1,0 +1,19 @@
+.textTextTrust {
+  position: absolute;
+  width: 84px;
+  height: 18px;
+  left: 1059px;
+  top: 523px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 137.4%;
+  /* identical to box height, or 18px */
+
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

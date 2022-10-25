@@ -1,0 +1,20 @@
+.firstLine {
+  position: absolute;
+  width: 92px;
+  height: 0px;
+  left: 1059px;
+  top: 485px;
+
+  border: 1px solid #94c5ff;
+  background-color: #94c5ff;
+}
+.secondLine {
+  position: absolute;
+  width: 14px;
+  height: 0px;
+  left: 1157px;
+  top: 485px;
+
+  border: 1px solid #94c5ff;
+  background-color: #94c5ff;
+}

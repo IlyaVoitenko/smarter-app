@@ -4,6 +4,7 @@ import Header from "../Header";
 import SmarterDataText from "./SmarterDataText";
 import Navigation from "../Navigation";
 import ImagesRics from "./ImagesRics";
+import TrustBlock from "./TrustBlock";
 const MainPage = () => {
   const { containerMainPage, containerMainPageContext } = style;
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
         <Navigation />
         <SmarterDataText />
         <ImagesRics />
+        <TrustBlock />
       </div>
     </div>
   );

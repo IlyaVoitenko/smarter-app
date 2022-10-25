@@ -1,0 +1,22 @@
+.textMainText {
+  position: absolute;
+  width: 246px;
+  height: 84px;
+  left: 1059px;
+  top: 343px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 137.4%;
+  /* or 21px */
+
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+
+  color: #eeeeee;
+}
+.colorBackTextBlue {
+  background: #0075ff;
+}
