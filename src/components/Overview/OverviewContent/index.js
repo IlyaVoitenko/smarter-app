@@ -9,7 +9,7 @@ const OverviewContent = () => {
   const { container, positionBtn } = style;
   return (
     <div className={container}>
-      <Navigation numberPage={"02"} />
+      <Navigation numberPage={"02"} pageActive={"overview"} />
       <ImageBackCard />
       <OverviewCards />
       <BtnTransparentDemo stylePosition={positionBtn} />

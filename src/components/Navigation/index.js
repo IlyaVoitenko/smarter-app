@@ -3,11 +3,11 @@ import style from "./style.module.css";
 import NavigationLinks from "./NavigationLinks";
 import NumberPage from "./NumberPage";
 
-const Navigation = ({ numberPage }) => {
+const Navigation = ({ numberPage, pageActive }) => {
   const { containerNavigationComponents } = style;
   return (
     <div className={containerNavigationComponents}>
-      <NavigationLinks />
+      <NavigationLinks pageActive={pageActive} />
       <NumberPage numberPage={numberPage} />
     </div>
   );
