@@ -1,67 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./style.module.css";
-import { Link } from "react-router-dom";
+import ImgPoint from "../ImgPoint";
+import NavigationLink from "../NavigationLink";
 
-const NavigationLinks = (pageActive) => {
-  const {
-    btnHome,
-    containerNavigationLinks,
-    spanNavLinks,
-    imgPoint,
-    btnClient,
-    linkRouter,
-    textColorWhite,
-    containerImgPoint,
-  } = style;
-
-  const [isActiveHomeLink, setIsActiveHomeLink] = useState(true);
-  const [isActiveOverviewLink, setIsActiveOverviewLink] = useState(false);
-  const [isActiveOurClientsLink, setIsActiveClientsLink] = useState(false);
-
-  switch (pageActive) {
-    case "home":
-      setIsActiveHomeLink(true);
-      setIsActiveClientsLink(false);
-      setIsActiveOverviewLink(false);
-      break;
-    case "overview":
-      setIsActiveOverviewLink(true);
-      setIsActiveClientsLink(false);
-      setIsActiveHomeLink(false);
-      break;
-    case "clients":
-      setIsActiveClientsLink(true);
-      setIsActiveHomeLink(false);
-      setIsActiveOverviewLink(false);
-      break;
-    default:
-      break;
-  }
+const NavigationLinks = () => {
+  const { btnHome, containerNavigationLinks, btnClient, btnOverview } = style;
   return (
     <div className={containerNavigationLinks}>
-      <span className={spanNavLinks} id={btnHome}>
-        <Link to="/home" className={linkRouter}>
-          HOME
-        </Link>
-      </span>
-      <div className={containerImgPoint}>
-        <img src="/image/Rectangle 20.png" className={imgPoint} alt="" />
-      </div>
-
-      <span className={spanNavLinks}>
-        <Link to="/overview" className={linkRouter}>
-          OVERVIEW
-        </Link>
-      </span>
-
-      <div className={containerImgPoint}>
-        <img src="/image/Rectangle 20.png" className={imgPoint} alt="" />
-      </div>
-      <span className={spanNavLinks} id={btnClient}>
-        <Link to="/our-clients" className={linkRouter}>
-          OUR CLIENTS
-        </Link>
-      </span>
+      <NavigationLink text={"HOME"} path={"/home"} idLink={btnHome} />
+      <ImgPoint />
+      <NavigationLink
+        text={"OVERVIEW"}
+        path={"/overview"}
+        idLink={btnOverview}
+      />
+      <ImgPoint />
+      <NavigationLink
+        text={"OUR CLIENTS"}
+        path={"/our-clients"}
+        idLink={btnClient}
+      />
     </div>
   );
 };

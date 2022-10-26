@@ -1,0 +1,12 @@
+.imgPoint {
+  display: block;
+  height: 3.71px;
+  width: 3.71px;
+}
+.containerImgPoint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15%;
+}

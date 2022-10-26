@@ -13,7 +13,7 @@ const MainPage = () => {
     <div className={containerMainPage}>
       <Header />
       <div className={containerMainPageContext}>
-        <Navigation numberPage={"01"} />
+        <Navigation numberPage={"01"} pageActive={"home"} />
         <SmarterDataText />
         <ImagesRics />
         <TrustBlock />

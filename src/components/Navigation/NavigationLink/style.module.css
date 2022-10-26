@@ -11,29 +11,10 @@
 
   text-decoration: none;
 }
-
-.containerNavigationLinks {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 308.5px;
-  flex: wrap;
-}
-#btnHome {
-  padding-right: 25px;
-}
-#btnClient {
-  padding-right: 9px;
-}
-
 .linkRouter {
   color: inherit;
   text-decoration: inherit;
 }
-#colorWhite {
-  color: white;
-}
-#btnOverview :active #btnHome {
-  color: red;
+#btnHome {
+  padding-right: 25px;
 }
