@@ -12,6 +12,7 @@
     rgba(255, 255, 255, 0.093) 37.35%,
     rgba(255, 255, 255, 0) 98.65%
   );
+  border: none;
 }
 .btn:hover {
   box-sizing: border-box;

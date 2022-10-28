@@ -7,10 +7,10 @@ const OverviewCards = () => {
 
   const cards = [
     {
-      id: 3,
-      urlImage: "/image/Platonic_3_-_Icosa0011.png",
-      title: "Collect",
-      text: "Quickly & efficiently collect building asset data, reducing your workload by up to 80% ",
+      id: 1,
+      urlImage: "/image/Pyramid_1_-_Tall0011.png",
+      title: "Update",
+      text: "Easily keep your asset data accurate, establishing a quality live data feed",
     },
 
     {
@@ -20,10 +20,10 @@ const OverviewCards = () => {
       text: "Connect Ai Assets to your existing system, to ensure you’re always working off quality, up to date data",
     },
     {
-      id: 1,
-      urlImage: "/image/Pyramid_1_-_Tall0011.png",
-      title: "Update",
-      text: "Easily keep your asset data accurate, establishing a quality live data feed",
+      id: 3,
+      urlImage: "/image/Platonic_3_-_Icosa0011.png",
+      title: "Collect",
+      text: "Quickly & efficiently collect building asset data, reducing your workload by up to 80% ",
     },
   ];
   return (
