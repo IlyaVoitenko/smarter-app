@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import style from "./style.module.css";
 import ImgPoint from "../ImgPoint";
 import { Link } from "react-router-dom";
