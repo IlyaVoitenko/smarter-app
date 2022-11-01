@@ -5,7 +5,6 @@ import { cards } from "./data";
 
 const SlickCarousel = () => {
   const { containerSlickCarousel } = style;
-
   return (
     <div className={containerSlickCarousel}>
       <ItemSlick images={cards} slidesToShow={3} />

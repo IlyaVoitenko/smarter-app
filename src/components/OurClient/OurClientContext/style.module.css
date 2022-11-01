@@ -3,7 +3,17 @@
   display: flex;
   flex-direction: row;
 }
-
+.columnFlex {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
 .color {
   color: white;
+}
+.containerBtn {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

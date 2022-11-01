@@ -2,18 +2,12 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import NextArrow from "../NextArrow";
 import PrevArrow from "../PrevArrow";
-import style from "./style.module.css";
+
+import ActiveSlickItem from "./ActiveSlickItem";
+import UnactiveSlickItem from "./UnactiveSlickItem";
 
 const ItemSlick = ({ images, slidesToShow = 3 }) => {
   const [imageIndex, setImageIndex] = useState(0);
-  const {
-    slide,
-    slideWrapper,
-    containerItemSlick,
-    contextItem,
-    titleItem,
-    activeSlide,
-  } = style;
 
   const settings = {
     className: "center",
@@ -25,7 +19,7 @@ const ItemSlick = ({ images, slidesToShow = 3 }) => {
     centerPadding: "0",
     swipeToSlide: true,
     focusOnSelect: true,
-
+    variableWidth: true,
     beforeChange: (current, next) => setImageIndex(next),
     responsive: [
       {
@@ -48,18 +42,12 @@ const ItemSlick = ({ images, slidesToShow = 3 }) => {
   const templateImages = images.map((image, idx) => {
     if (image !== null) {
       return (
-        <div
-          className={idx === imageIndex ? activeSlide : slide}
-          id={containerItemSlick}
-          key={image.id}
-        >
-          <div className={slideWrapper}>
-            {image.code ? image.code : <img src={image.src} alt="" />}
-          </div>
-          <div>
-            <span className={titleItem}>{image.title}</span>
-            <p className={contextItem}>{image.content}</p>
-          </div>
+        <div key={image.id}>
+          {idx === imageIndex ? (
+            <ActiveSlickItem item={image} />
+          ) : (
+            <UnactiveSlickItem item={image} />
+          )}
         </div>
       );
     }

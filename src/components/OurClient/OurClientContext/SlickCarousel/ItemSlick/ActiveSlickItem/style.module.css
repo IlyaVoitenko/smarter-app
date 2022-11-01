@@ -1,0 +1,29 @@
+.contextItem {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 131.4%;
+  /* identical to box height, or 17px */
+  color: #ffffff;
+}
+.titleItem {
+  font-family: "Monument Extended";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.activeSlide {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+}
+.containerContext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

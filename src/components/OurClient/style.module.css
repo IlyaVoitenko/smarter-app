@@ -1,3 +1,5 @@
 .containerOurClient {
   height: 850px;
+  background: url("../../../public/image/imageBackClients.png");
+  background-size: 100% 100%;
 }
