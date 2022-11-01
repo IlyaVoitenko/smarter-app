@@ -1,18 +1,32 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
-import NextArrow from "../NextArrow";
-import PrevArrow from "../PrevArrow";
-
 import ActiveSlickItem from "./ActiveSlickItem";
 import UnactiveSlickItem from "./UnactiveSlickItem";
 
 const ItemSlick = ({ images, slidesToShow = 3 }) => {
   const [imageIndex, setImageIndex] = useState(0);
+  const [posScroll] = useState(0);
+  const customeSlider = useRef();
+  const gotoNext = () => {
+    customeSlider.current.slickNext();
+  };
 
+  const gotoPrev = () => {
+    customeSlider.current.slickPrev();
+  };
+  function scroll(e, posScroll) {
+    let st = e.deltaY;
+    if (st > posScroll) {
+      return gotoPrev();
+    } else {
+      return gotoNext();
+    }
+  }
   const settings = {
     className: "center",
     centerMode: true,
     infinite: true,
+    arrows: false,
     dots: false,
     speed: 300,
     slidesToShow: slidesToShow,
@@ -42,7 +56,7 @@ const ItemSlick = ({ images, slidesToShow = 3 }) => {
   const templateImages = images.map((image, idx) => {
     if (image !== null) {
       return (
-        <div key={image.id}>
+        <div key={image.id} onWheel={(e) => scroll(e, posScroll)}>
           {idx === imageIndex ? (
             <ActiveSlickItem item={image} />
           ) : (
@@ -53,7 +67,11 @@ const ItemSlick = ({ images, slidesToShow = 3 }) => {
     }
     return null;
   });
-  return <Slider {...settings}>{templateImages}</Slider>;
+  return (
+    <Slider {...settings} ref={customeSlider}>
+      {templateImages}
+    </Slider>
+  );
 };
 
 export default ItemSlick;
